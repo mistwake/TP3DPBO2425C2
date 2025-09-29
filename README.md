@@ -15,7 +15,7 @@ Program ini menggunakan minimal 3 kelas: **Orang**, **Pasien**, dan **RawatInap*
 <img width="381" height="751" alt="diagram" src="https://github.com/user-attachments/assets/30e93143-7a37-4b6d-99f9-e4e9ac2f3e05" />
 
 ## Penjelasan Class
-## 1. **Orang**
+### 1. **Orang**
 - **Deskripsi:**  
   Kelas dasar yang menyimpan atribut umum orang. Semua entitas manusia (pasien, dokter, perawat) bisa mewarisi kelas ini supaya tidak perlu menduplikasi atribut umum.
 
@@ -32,7 +32,7 @@ Program ini menggunakan minimal 3 kelas: **Orang**, **Pasien**, dan **RawatInap*
   - `setNik(nik)` → Mengatur `nik` orang.
   - `setNama(nama)` → Mengatur `nama` orang.
 
-## 2. **Pasien** (turunan dari **Orang**)
+### 2. **Pasien** (turunan dari **Orang**)
 - **Deskripsi:**  
   Kelas ini mewarisi atribut umum dari Orang, lalu menambahkan atribut khusus untuk pasien rumah sakit. Ini memungkinkan kita menyimpan semua data penting pasien.
 
@@ -52,7 +52,7 @@ Program ini menggunakan minimal 3 kelas: **Orang**, **Pasien**, dan **RawatInap*
   - `setGolDarah(gol)` → Mengatur golongan darah pasien.
   - `setAlamat(alamat)` → Mengatur alamat pasien.
 
-## 3. **RawatInap**
+### 3. **RawatInap**
 - **Deskripsi:**  
   Kelas yang merepresentasikan kamar rawat inap. Kelas ini tidak mewarisi Orang atau Pasien, tetapi **memiliki** kumpulan Pasien (composition). Atributnya meliputi data kamar dan daftar pasien.
 
